@@ -1,0 +1,110 @@
+/* Cod para linkar fonte */
+@font-face {
+    font-family: FuturaHandwritten;
+    src: url("../../font/FuturaHandwritten.ttf");
+}
+
+/* Estilização do corpo da página */
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Alinha os itens no topo */
+}
+
+figcaption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+
+/* Estilização da imagem */
+.imagem-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Estilização da imagem para duas na mesma página*/
+.imagem-container2 {
+    max-width: 100%;
+    /* A imagem nunca ultrapassará a largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    text-align: center;
+}
+
+/* Estilo do parágrafo com classe estilo_texto_corrido */
+.estilo_texto_corrido {
+    max-width: 50%;
+    color: #3c3d5b;
+    font-family: FuturaHandwritten, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.titulo_final {
+    max-width: 30%;
+    color: #3c3d5b;
+    font-family: FuturaHandwritten, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+/* Estiliza o cabeçalho com os botões */
+.headerbt {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os botões */
+    gap: 20px;
+    /* Espaçamento entre os botões */
+    position: fixed;
+    /* Fixa no topo da tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ocupa toda a largura */
+    background-color: #ffffff;
+    /* Cor de fundo */
+    padding: 15px 0;
+    /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombrinha para destaque */
+    z-index: 1000;
+    /* Garante que fique acima do conteúdo */
+}
+
+/* Estiliza os botões */
+.headerbt button {
+    font-family: Arial, sans-serif;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.headerbt button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Adiciona um espaçamento para o conteúdo não ficar escondido pelo cabeçalho */
+.content {
+    margin-top: 80px;
+    /* Deve ser maior que a altura do cabeçalho */
+    padding: 20px;
+    text-align: center;
+}
